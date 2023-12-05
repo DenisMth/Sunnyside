@@ -1,1 +1,110 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  font-family: "Barlow", sans-serif;
+  color: hsl(232, 10%, 55%);
+  width: 100%;
+  margin: 0;
+}
+
+.burgerMenu {
+  display: none;
+}
+
+header {
+  background-image: url("images/image-header.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 538px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+}
+header .topBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 24px 0 24px;
+  align-items: center;
+}
+header h1 {
+  margin-top: 88px;
+}
+header .arrowDown {
+  display: block;
+  margin: auto;
+  margin-top: 52px;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  letter-spacing: 6.25px;
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -0.23px;
+  text-align: center;
+  color: hsl(212, 27%, 19%);
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: hsl(212, 27%, 19%);
+}
+
+i {
+  font-family: "Fraunces", serif;
+  color: hsl(212, 27%, 19%);
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-style: normal;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.13px;
+  line-height: 30px;
+}
+
+.article__illustration {
+  width: 100%;
+}
+.article__title {
+  margin: 64px 24px 0 24px;
+}
+.article__text {
+  margin: 24px;
+  text-align: center;
+}
+.article__more {
+  display: inline-block;
+  margin: auto;
+  margin-top: 8px;
+  margin-bottom: 64px;
+}
+.article__more__underline {
+  border-radius: 28px;
+  opacity: 0.25;
+  height: 10px;
+  width: 137px;
+  margin: auto;
+  margin-top: -10px;
+}
+.article__more__underline--color1 {
+  background-color: hsl(51, 100%, 49%);
+}
+.article__more__underline--color2 {
+  background: hsl(7, 99%, 70%);
+}
+.article__more:hover .article__more__underline {
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */

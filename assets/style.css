@@ -50,11 +50,6 @@ h2 {
 }
 
 a, a:visited {
-  text-decoration: none;
-  color: hsl(212, 27%, 19%);
-}
-
-i {
   font-family: "Fraunces", serif;
   color: hsl(212, 27%, 19%);
   font-size: 15px;
@@ -65,6 +60,20 @@ i {
   font-style: normal;
   text-transform: uppercase;
   border-radius: 5px;
+  position: relative;
+}
+
+a::after, a:visited::after {
+  content: "";
+  z-index: -1;
+  width: 114%;
+  height: 10px;
+  border-radius: 28px;
+  background-size: cover;
+  position: absolute;
+  bottom: -3px;
+  left: -7%;
+  opacity: 0.25;
 }
 
 p {
@@ -86,25 +95,57 @@ p {
   text-align: center;
 }
 .article__more {
-  display: inline-block;
-  margin: auto;
+  text-align: center;
   margin-top: 8px;
   margin-bottom: 64px;
 }
-.article__more__underline {
-  border-radius: 28px;
-  opacity: 0.25;
-  height: 10px;
-  width: 137px;
-  margin: auto;
-  margin-top: -10px;
+.article__more__redirect:hover .article__more__link::after {
+  opacity: 1;
 }
-.article__more__underline--color1 {
+.article__more--transform::after {
   background-color: hsl(51, 100%, 49%);
 }
-.article__more__underline--color2 {
-  background: hsl(7, 99%, 70%);
+.article__more--standOut::after {
+  background-color: hsl(7, 99%, 70%);
 }
-.article__more:hover .article__more__underline {
-  opacity: 1;
+
+.message {
+  height: 600px;
+  background-position: center;
+  margin: 0;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.message--graphicDesign {
+  background-image: url("images/image-graphic-design.jpg");
+  color: hsl(167, 40%, 24%);
+}
+.message--photography {
+  background-image: url("images/image-photography.jpg");
+  color: hsl(198, 62%, 26%);
+}
+.message__title {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 28px;
+  letter-spacing: -0.2px;
+  text-align: center;
+  padding-top: 398px;
+}
+.message__text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.11px;
+  line-height: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 59px;
+}
+
+.testimonials {
+  background-color: hsl(0, 0%, 100%);
 }/*# sourceMappingURL=style.css.map */

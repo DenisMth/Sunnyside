@@ -17,8 +17,8 @@
 <body>
   <header>
     <div class="topBar">
-      <img src="assets/icons/logo.svg" alt="Sunnyside's logo">
-      <img src="assets/icons/icon-hamburger.svg" alt="Burger menu icon">
+      <img class="topBar__logo" src="assets/icons/logo.svg" alt="Sunnyside's logo">
+      <img class="topBar__burger" src="assets/icons/icon-hamburger.svg" alt="Burger menu icon">
     </div>
     <div class="burgerMenu">
       About
@@ -78,18 +78,21 @@
   <div class="testimonials">
     <h4 class="testimonials testimonials__title">Client testimonials</h4>
 
+    <img class="testimonials testimonials__picture" src="assets/images/image-emily.jpg" alt="Picture of Emily R.">
     <p class="testimonials testimonials__text testimonials__text">
       We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
     </p>
     <i class="testimonials testimonials__signature">Emily R.</i>
     <span class="testimonials testimonials__rank">Marketing Director</span>
 
+    <img class="testimonials testimonials__picture" src="assets/images/image-thomas.jpg" alt="Picture of Thomas S.">
     <p class="testimonials testimonials__text testimonials__text">
       Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
     </p>
     <i class="testimonials testimonials__signature">Thomas S.</i>
     <span class="testimonials testimonials__rank">Chief Operating Officer</span>
 
+    <img class="testimonials testimonials__picture" src="assets/images/image-jennie.jpg" alt="Picture of Jennie F.">
     <p class="testimonials testimonials__text testimonials__text">
       Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
     </p>
@@ -99,10 +102,24 @@
   </div>
 
   <footer>
-    About
-    Services
-    Projects
-    Contact
+    <pictures class="footerPictures">
+      <span class="footerPictures__picture footerPictures__picture--milkBottles"></span>
+      <span class="footerPictures__picture footerPictures__picture--orange"></span>
+      <span class="footerPictures__picture footerPictures__picture--iceCone"></span>
+      <span class="footerPictures__picture footerPictures__picture--sugarCubes"></span>
+    </pictures>
+    <img class="footer__logo" src="assets/icons/logo.svg" alt="Sunnyside's logo">
+      <div class="footerInfos">
+        <h5 class="footerInfos__title">About</h5>
+        <h5 class="footerInfos__title">Services</h5>
+        <h5 class="footerInfos__title">Projects</h5>
+      </div>
+      <contact class="footerInfos__contacts">
+        <img class="footerInfos__contacts__icon" src="assets/icons/icon-facebook.svg">
+        <img class="footerInfos__contacts__icon" src="assets/icons/icon-instagram.svg">
+        <img class="footerInfos__contacts__icon" src="assets/icons/icon-twitter.svg">
+        <img class="footerInfos__contacts__icon" src="assets/icons/icon-pinterest.svg">
+      </contact>
   </footer>
 
 </body>

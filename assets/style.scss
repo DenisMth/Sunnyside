@@ -3,6 +3,7 @@ $yellow: hsl(51, 100%, 49%);
 $darkDesaturatedCyan : hsl(167, 40%, 24%);  //(graphic design text)
 $darkBlue : hsl(198, 62%, 26%); //(photography text)
 $darkModerateCyan : hsl(168, 34%, 41%); //(footer)
+$brightModerateCyan : hsl(168, 44%, 70%); //(footer)
 
 
 $veryDarkDesaturatedBlue: hsl(212, 27%, 19%);
@@ -14,15 +15,18 @@ $white: hsl(0, 0%, 100%);
 $Barlow: 'Barlow', sans-serif;
 $Fraunces: 'Fraunces', serif;
 
+
 body {
     font-family: $Barlow;
-    color:$darkGrayishBlue;
+    color:$veryDarkGrayishBlue;
     width:100%;
     margin:0;
 }
+
 .burgerMenu {
     display:none;
 }
+
 header{
     background-image: url("images/image-header.jpg");
     background-position: center;
@@ -37,6 +41,14 @@ header{
         justify-content:space-between;
         padding:32px 24px 0 24px;
         align-items:center;
+
+        &__logo:hover {
+            cursor:pointer;
+        }
+
+        &__burger:hover{
+            cursor:pointer;
+        }
     }
 
     h1{
@@ -165,8 +177,8 @@ p{
             font-weight:600;
             letter-spacing: -0.11px;
             line-height: 27px;
-            padding-left: 20px;
-            padding-right:20px;
+            padding-left: 24px;
+            padding-right:24px;
 
             padding-bottom:59px;
             
@@ -175,5 +187,142 @@ p{
     
     .testimonials{
         background-color:$white;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        
+        &__title{
+            font-family: $Fraunces;
+            font-size:16px;
+            font-weight:900;
+            font-style: normal;
+            letter-spacing:4px;
+            text-transform: uppercase;
+            margin:64px 24px 0 24px;
+            color:$grayishBlue;
+        }
+        &__picture{
+            width:72px;
+            border-radius:100%;
+            margin-top:64px;
+        }
+        &__text{
+            text-align:center;
+            padding-left: 24px;
+            padding-right:24px;
+            font-weight: 600;
+            font-size: 18px;;
+            line-height: 32px;
+            letter-spacing: -0.13px;
+        }
+        &__signature{
+            font-family: $Fraunces;
+            font-weight: 900;
+            font-size: 18px;
+            letter-spacing: -0.13px;
+            font-style: normal;
+            color:$veryDarkDesaturatedBlue;
+            margin-top:32px;
+        }
+        &__rank{
+            font-weight: 600;
+            font-size:14px;
+            line-height:25px;
+            letter-spacing: -0.1px;
+            margin-top:9px;
+            color:$grayishBlue;
+        }
     }
+
+    footer{
+        margin-top:86px;
+        background-color:$brightModerateCyan;
+
+        .footerPictures{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            &__picture{
+                width:50%;
+                height:188px;
+                background-position: center;
+                background-size: cover;
+
+                &--milkBottles{
+                    background-image: url("images/image-gallery-milkbottles.jpg");
+                }
+                &--orange{
+                    background-image: url("images/image-gallery-orange.jpg");
+                }
+                &--iceCone{
+                    background-image: url("images/image-gallery-cone.jpg");
+                }
+                &--sugarCubes{
+                    background-image: url("images/image-gallery-sugarcubes.jpg");
+                }
+            }
+        }
+
+        .footer__logo{
+            display:block;
+            height:33px;
+            margin:auto;
+            margin-top:64px;
+            margin-bottom:40px;
+            filter: invert(38%) sepia(53%) saturate(421%) hue-rotate(118deg) brightness(60%) contrast(92%);
+        }
+
+        .footerInfos{   
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin:0px;
+
+            &__title{
+                margin-top:0px;
+                margin-bottom:88px;
+                font-size: 18px;
+                letter-spacing:-0.13px;
+                line-height: 25px;
+                font-style:normal;
+                color:$darkModerateCyan;
+            }
+
+            &__title:hover{
+                cursor:pointer;
+                filter:grayscale(1) brightness(100%) contrast(100) invert(1);
+            }
+
+            &__contacts{
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin:0;
+                margin:auto;
+                padding-bottom:80px;
+                width:164px;
+                height:20px;
+
+                &__icon:hover{
+                    cursor:pointer;
+                    filter:grayscale(1) brightness(100%) contrast(100) invert(1);
+                }
+            }
+        }
+
+    }
+
+    /*@media screen and (min-width:800px) {
+        .article{
+            display:flex;
+            flex-direction: row;
+
+            &__illustration{
+                order:1;
+            }
+        }
+    }*/
 

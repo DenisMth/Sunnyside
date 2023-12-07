@@ -19,6 +19,12 @@
     <div class="topBar">
       <img class="topBar__logo" src="assets/icons/logo.svg" alt="Sunnyside's logo">
       <img class="topBar__burger" src="assets/icons/icon-hamburger.svg" alt="Burger menu icon">
+      <div class="topBar__menu">
+        <span class="topBar__menu__element">About</span>
+        <span class="topBar__menu__element">Services</span>
+        <span class="topBar__menu__element">Projects</span>
+        <span class="topBar__menu__element topBar__menu__contactButton">Contact</span>
+      </div>
     </div>
     <div class="burgerMenu">
       About
@@ -31,73 +37,87 @@
     <img class="arrowDown" src="assets/icons/icon-arrow-down.svg" alt="Arrow down icon">
   </header>
 
-  <div class="article article__transform" >
+  <div class="article article--transform" >
 
-    <img class="article__illustration" src="assets/images/image-transform.jpg" alt="Transform image">
+    <img class="article__illustration article__illustration--transform" src="assets/images/image-transform.jpg" alt="Transform image">
 
-    <h2 class="article article__title">Transform your brand</h2>
+    <div class="article__textBlock article__textBlock--transform">
+      <h2 class="article__textBlock__title">Transform your brand</h2>
 
-    <p class="article article__text">
-      We are a full-service creative agency specializing in helping brands grow fast. 
-      Engage your clients through compelling visuals that do most of the marketing for you.
-    </p>
-    <div class="article article__more">
-      <span class="article article__more article__more__redirect"><a class="article__more--transform article__more__link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Learn more</a></span>
+      <p class="article__textBlock__text">
+        We are a full-service creative agency specializing in helping brands grow fast. 
+        Engage your clients through compelling visuals that do most of the marketing for you.
+      </p>
+      <div class="article__textBlock__more">
+        <span class="article__textBlock__more article__textBlock__more__redirect"><a class="article__textBlock__more--transform article__textBlock__more__link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Learn more</a></span>
+      </div>
     </div>
   </div>
 
-  <div class="article article__standOut" >
+  <div class="article article--standOut" >
 
-    <img class="article__illustration" src="assets/images/image-stand-out.jpg" alt="Stand out image">
+    <img class="article__illustration article__illustration--standOut" src="assets/images/image-stand-out.jpg" alt="Stand out image">
 
-    <h2 class="article article__title">Stand out to the right audience</h2>
 
-    <p class="article article__text">
-      Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
-    </p>
+    <div class="article__textBlock article__textBlock--standOut">
+      <h2 class="article__textBlock__title">Stand out to the right audience</h2>
 
-    <div class="article article__more">
-      <span class="article article__more article__more__redirect"><a class="article__more--standOut article__more__link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Learn more</a></span>
+      <p class="article__textBlock__text">
+        Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+      </p>
+
+      <div class="article__textBlock__more">
+        <span class="article__textBlock__more article__textBlock__more__redirect"><a class="article__textBlock__more--standOut article__textBlock__more__link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Learn more</a></span>
+      </div>
     </div>
   </div>
 
-  <div class="message message--graphicDesign">
-    <h3 class="message message__title">Graphic design</h3>
-    <p class="message message__text">
-      Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-    </p>
+  <div class="messages">
+    <div class="message message--graphicDesign">
+      <h3 class="message message__title">Graphic design</h3>
+      <p class="message message__text">
+        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+      </p>
+    </div>
+
+    <div class="message message--photography">
+      <h3 class="message message__title">Photography</h3>
+      <p class="message message__text">
+        Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+      </p>
+    </div>
   </div>
 
-  <div class="message message--photography">
-    <h3 class="message message__title">Photography</h3>
-    <p class="message message__text">
-      Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-    </p>
-  </div>
-  
+  <h4 class="testimonials__title">Client testimonials</h4>
+
   <div class="testimonials">
-    <h4 class="testimonials testimonials__title">Client testimonials</h4>
 
-    <img class="testimonials testimonials__picture" src="assets/images/image-emily.jpg" alt="Picture of Emily R.">
-    <p class="testimonials testimonials__text testimonials__text">
-      We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-    </p>
-    <i class="testimonials testimonials__signature">Emily R.</i>
-    <span class="testimonials testimonials__rank">Marketing Director</span>
+    <div class="testimonials__blocks">
+      <img class=" testimonials__picture" src="assets/images/image-emily.jpg" alt="Picture of Emily R.">
+      <p class="testimonials__text testimonials__text">
+        We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+      </p>
+      <i class="testimonials__signature">Emily R.</i>
+      <span class="testimonials__rank">Marketing Director</span>
+    </div>
 
-    <img class="testimonials testimonials__picture" src="assets/images/image-thomas.jpg" alt="Picture of Thomas S.">
-    <p class="testimonials testimonials__text testimonials__text">
-      Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-    </p>
-    <i class="testimonials testimonials__signature">Thomas S.</i>
-    <span class="testimonials testimonials__rank">Chief Operating Officer</span>
+    <div class="testimonials__blocks">
+      <img class="testimonials__picture" src="assets/images/image-thomas.jpg" alt="Picture of Thomas S.">
+      <p class="testimonials__text testimonials__text">
+        Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+      </p>
+      <i class="testimonials__signature">Thomas S.</i>
+      <span class="testimonials__rank">Chief Operating Officer</span>
+    </div>
 
-    <img class="testimonials testimonials__picture" src="assets/images/image-jennie.jpg" alt="Picture of Jennie F.">
-    <p class="testimonials testimonials__text testimonials__text">
-      Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-    </p>
-    <i class="testimonials testimonials__signature">Jennie F.</i>
-    <span class="testimonials testimonials__rank">Business Owner</span>
+    <div class="testimonials__blocks">
+      <img class="testimonials__picture" src="assets/images/image-jennie.jpg" alt="Picture of Jennie F.">
+      <p class="testimonials__text testimonials__text">
+        Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+      </p>
+      <i class="testimonials__signature">Jennie F.</i>
+      <span class="testimonials__rank">Business Owner</span>
+    </div>
 
   </div>
 

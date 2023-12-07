@@ -23,6 +23,50 @@ header .topBar {
   padding: 32px 24px 0 24px;
   align-items: center;
 }
+@media (min-width: 800px) {
+  header .topBar {
+    padding: 34px 48px 0 40px;
+  }
+}
+@media (min-width: 800px) {
+  header .topBar__burger {
+    display: none;
+  }
+}
+header .topBar__menu {
+  display: none;
+}
+@media (min-width: 800px) {
+  header .topBar__menu {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  header .topBar__menu__element {
+    cursor: pointer;
+  }
+  header .topBar__menu__contactButton {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.1px;
+    color: hsl(212, 27%, 19%);
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 28px;
+    padding: 16px 30px 15px 32px;
+    transition: all 0.3s;
+  }
+  header .topBar__menu__contactButton:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: rgba(255, 255, 255, 0.2537);
+  }
+}
 header .topBar__logo:hover {
   cursor: pointer;
 }
@@ -90,29 +134,85 @@ p {
   line-height: 30px;
 }
 
+@media (min-width: 800px) {
+  .article {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
 .article__illustration {
   width: 100%;
 }
-.article__title {
+@media (min-width: 800px) {
+  .article__illustration {
+    width: 50%;
+  }
+}
+@media (min-width: 800px) {
+  .article__illustration--transform {
+    order: 1;
+  }
+}
+@media (min-width: 800px) {
+  .article__textBlock {
+    width: 50%;
+  }
+}
+.article__textBlock__title {
   margin: 64px 24px 0 24px;
 }
-.article__text {
+@media (min-width: 800px) {
+  .article__textBlock__title {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: left;
+    margin-left: 23%;
+    padding-right: 15%;
+    margin-top: 26%;
+  }
+}
+.article__textBlock__text {
   margin: 24px;
   text-align: center;
 }
-.article__more {
+@media (min-width: 800px) {
+  .article__textBlock__text {
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: left;
+    margin-left: 23%;
+    padding-right: 15%;
+  }
+}
+.article__textBlock__more {
   text-align: center;
   margin-top: 8px;
   margin-bottom: 64px;
 }
-.article__more__redirect:hover .article__more__link::after {
+@media (min-width: 800px) {
+  .article__textBlock__more {
+    margin-bottom: 0px;
+    text-align: left;
+    margin-left: 13%;
+  }
+}
+.article__textBlock__more__redirect:hover .article__textBlock__more__link::after {
   opacity: 1;
 }
-.article__more--transform::after {
+.article__textBlock__more--transform::after {
   background-color: hsl(51, 100%, 49%);
 }
-.article__more--standOut::after {
+.article__textBlock__more--standOut::after {
   background-color: hsl(7, 99%, 70%);
+}
+
+@media (min-width: 800px) {
+  .messages {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .message {
@@ -124,6 +224,11 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+@media (min-width: 800px) {
+  .message {
+    width: 50%;
+  }
 }
 .message--graphicDesign {
   background-image: url("images/image-graphic-design.jpg");
@@ -157,6 +262,27 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 0px;
+}
+@media (min-width: 800px) {
+  .testimonials {
+    flex-direction: row;
+    padding-left: 165px;
+    padding-right: 165px;
+    margin-bottom: 0px;
+  }
+}
+.testimonials__blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  .testimonials__blocks {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .testimonials__title {
   font-family: "Fraunces", serif;
@@ -167,11 +293,25 @@ p {
   text-transform: uppercase;
   margin: 64px 24px 0 24px;
   color: hsl(210, 4%, 67%);
+  text-align: center;
+}
+@media (min-width: 800px) {
+  .testimonials__title {
+    margin-top: 160px;
+  }
 }
 .testimonials__picture {
   width: 72px;
   border-radius: 100%;
   margin-top: 64px;
+  margin-bottom: 32px;
+}
+@media (min-width: 800px) {
+  .testimonials__picture {
+    margin: auto;
+    margin-top: 81px;
+    margin-bottom: 58px;
+  }
 }
 .testimonials__text {
   text-align: center;
@@ -191,6 +331,11 @@ p {
   color: hsl(212, 27%, 19%);
   margin-top: 32px;
 }
+@media (min-width: 800px) {
+  .testimonials__signature {
+    margin-top: 69px;
+  }
+}
 .testimonials__rank {
   font-weight: 600;
   font-size: 14px;
@@ -204,6 +349,11 @@ footer {
   margin-top: 86px;
   background-color: hsl(168, 44%, 70%);
 }
+@media (min-width: 800px) {
+  footer {
+    margin-top: 160px;
+  }
+}
 footer .footerPictures {
   display: flex;
   flex-direction: row;
@@ -213,9 +363,15 @@ footer .footerPictures {
 }
 footer .footerPictures__picture {
   width: 50%;
-  height: 188px;
+  aspect-ratio: 1/1;
   background-position: center;
   background-size: cover;
+}
+@media (min-width: 800px) {
+  footer .footerPictures__picture {
+    width: 25%;
+    height: 447px;
+  }
 }
 footer .footerPictures__picture--milkBottles {
   background-image: url("images/image-gallery-milkbottles.jpg");
@@ -236,6 +392,11 @@ footer .footer__logo {
   margin-top: 64px;
   margin-bottom: 40px;
   filter: invert(38%) sepia(53%) saturate(421%) hue-rotate(118deg) brightness(60%) contrast(92%);
+}
+@media (min-width: 800px) {
+  footer .footer__logo {
+    margin-top: 72px;
+  }
 }
 footer .footerInfos {
   display: flex;
@@ -266,18 +427,12 @@ footer .footerInfos__contacts {
   width: 164px;
   height: 20px;
 }
+@media (min-width: 800px) {
+  footer .footerInfos__contacts {
+    padding-bottom: 72px;
+  }
+}
 footer .footerInfos__contacts__icon:hover {
   cursor: pointer;
   filter: grayscale(1) brightness(100%) contrast(100) invert(1);
-}
-
-/*@media screen and (min-width:800px) {
-    .article{
-        display:flex;
-        flex-direction: row;
-
-        &__illustration{
-            order:1;
-        }
-    }
-}*//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

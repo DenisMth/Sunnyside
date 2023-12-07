@@ -63,7 +63,7 @@ header{
             display:none;
 
             @include media-minwidth($desktop-screen){
-                width:35%;
+                width:470px;
                 display:flex;
                 flex-direction: row;
                 justify-content: space-between;

@@ -1,6 +1,6 @@
 # Sunnyside
 
-Sunnyside is a project where we had a base template to reproduce pixel-perfect.
+Sunnyside is a project where we had a base template to reproduce pixel-perfect using only HTML and CSS.
 It may contain some easter eggs...
 
 https://denismth.github.io/Sunnyside/
